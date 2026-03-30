@@ -5,7 +5,9 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
   imports: [],
   template: `
     <header>
-      <h1>{{ heading() }}</h1>
+      <h1 class="p-4 bg-green-500 text-white rounded-lg shadow-md">
+        {{ heading() }}
+      </h1>
     </header>
   `,
   styles: ``,

@@ -9,5 +9,5 @@ import { HeaderComponent } from './components/header/header';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('personal-website');
+  protected readonly title = signal('Mritesh Adak');
 }
