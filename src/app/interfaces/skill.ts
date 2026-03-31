@@ -1,4 +1,7 @@
+type proficiency = "Beginner" | "Intermediate" | "Advanced" | "Expert";
+
 export interface Skill {
     name: string;
-    type: string;
+    type?: string;
+    proficiency?: proficiency;
 }
