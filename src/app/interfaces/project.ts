@@ -3,6 +3,7 @@ export interface Project {
     name: string;
     description: string;
     projectUrl: string;
-    imageUrl?: string;
+    imageUrl?: string | null;
     tag: string;
+    displayOrder: number;
 }
