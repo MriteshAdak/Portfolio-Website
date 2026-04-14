@@ -10,7 +10,7 @@ import { Router, RouterLink } from '@angular/router';
       <section class="w-full rounded-[2rem] border border-white/10 bg-slate-950/80 p-6 shadow-2xl shadow-slate-950/40 backdrop-blur sm:p-8">
         <p class="text-xs font-semibold uppercase tracking-[0.35em] text-cyan-300">Admin access</p>
         <h1 class="mt-3 text-3xl font-semibold text-white">Sign in</h1>
-        <p class="mt-3 text-sm leading-6 text-slate-300">
+        <p class="detail-text mt-3 text-sm leading-6 text-slate-300">
           Use the server-validated credentials for the temporary V1 admin flow.
         </p>
 

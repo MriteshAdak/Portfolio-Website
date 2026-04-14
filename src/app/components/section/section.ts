@@ -14,7 +14,7 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
             {{ title() }}
           </h2>
           @if (description()) {
-            <p class="mt-3 max-w-3xl text-sm leading-6 text-slate-300 sm:text-base">
+            <p class="detail-text mt-3 max-w-3xl text-sm leading-6 text-slate-300 sm:text-base">
               {{ description() }}
             </p>
           }

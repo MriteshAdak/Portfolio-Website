@@ -18,7 +18,7 @@ import { TagsComponent } from '../tags/tags';
 
         <div class="space-y-3">
           <h3 class="text-xl font-semibold text-white">{{ project().name }}</h3>
-          <p class="text-sm leading-6 text-slate-300">{{ project().description }}</p>
+          <p class="detail-text text-sm leading-6 text-slate-300">{{ project().description }}</p>
         </div>
 
         <div class="mt-auto flex items-center justify-between gap-4">

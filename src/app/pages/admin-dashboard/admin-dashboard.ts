@@ -12,7 +12,7 @@ import { PortfolioData } from '../../interfaces/portfolio-data';
           <div>
             <p class="text-xs font-semibold uppercase tracking-[0.35em] text-cyan-300">Admin dashboard</p>
             <h1 class="mt-3 text-3xl font-semibold text-white">Portfolio management</h1>
-            <p class="mt-3 max-w-3xl text-sm leading-6 text-slate-300">
+            <p class="detail-text mt-3 max-w-3xl text-sm leading-6 text-slate-300">
               This shell is connected to the server session endpoint and the public portfolio API. CRUD screens will be layered on top of it next.
             </p>
           </div>
@@ -28,18 +28,18 @@ import { PortfolioData } from '../../interfaces/portfolio-data';
         </div>
 
         @if (loading()) {
-          <p class="py-8 text-sm text-slate-300">Loading portfolio data...</p>
+          <p class="detail-text py-8 text-sm text-slate-300">Loading portfolio data...</p>
         } @else if (portfolio()) {
           <div class="mt-6 grid gap-4 lg:grid-cols-2">
             <article class="rounded-[1.5rem] border border-white/10 bg-white/5 p-5">
               <p class="text-xs uppercase tracking-[0.35em] text-cyan-300">User info</p>
               <h2 class="mt-3 text-2xl font-semibold text-white">{{ portfolio()?.profile?.fullName }}</h2>
-              <p class="mt-3 text-sm leading-6 text-slate-300">{{ portfolio()?.profile?.summary }}</p>
+              <p class="detail-text mt-3 text-sm leading-6 text-slate-300">{{ portfolio()?.profile?.summary }}</p>
             </article>
 
             <article class="rounded-[1.5rem] border border-white/10 bg-white/5 p-5">
               <p class="text-xs uppercase tracking-[0.35em] text-cyan-300">Contact</p>
-              <div class="mt-3 space-y-2 text-sm text-slate-200">
+              <div class="detail-text mt-3 space-y-2 text-sm text-slate-200">
                 <p>{{ portfolio()?.contact?.email }}</p>
                 <p>{{ portfolio()?.contact?.linkedinUrl }}</p>
                 <p>{{ portfolio()?.contact?.githubUrl }}</p>
@@ -52,7 +52,7 @@ import { PortfolioData } from '../../interfaces/portfolio-data';
                 @for (project of portfolio()?.projects ?? []; track project.id) {
                   <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-4">
                     <p class="text-sm font-medium text-white">{{ project.name }}</p>
-                    <p class="mt-1 text-sm text-slate-300">{{ project.description }}</p>
+                    <p class="detail-text mt-1 text-sm text-slate-300">{{ project.description }}</p>
                   </div>
                 }
               </div>
@@ -64,7 +64,7 @@ import { PortfolioData } from '../../interfaces/portfolio-data';
                 @for (experience of portfolio()?.experiences ?? []; track experience.id) {
                   <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-4">
                     <p class="text-sm font-medium text-white">{{ experience.role }} · {{ experience.company }}</p>
-                    <p class="mt-1 text-sm text-slate-300">{{ experience.summary }}</p>
+                    <p class="detail-text mt-1 text-sm text-slate-300">{{ experience.summary }}</p>
                   </div>
                 }
               </div>

@@ -26,7 +26,7 @@ import { UserProfile } from '../../interfaces/user-profile';
         <div class="grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
           <div class="rounded-[1.75rem] border border-white/10 bg-white/5 p-6">
             <p class="text-sm uppercase tracking-[0.35em] text-cyan-300">Summary</p>
-            <p class="mt-4 text-base leading-7 text-slate-200">
+            <p class="detail-text mt-4 text-base leading-7 text-slate-200">
               {{ profile.headline }}
             </p>
             <app-tags class="mt-5" [tags]="highlights" />
@@ -34,7 +34,7 @@ import { UserProfile } from '../../interfaces/user-profile';
 
           <div class="rounded-[1.75rem] border border-cyan-300/20 bg-cyan-300/10 p-6">
             <p class="text-sm uppercase tracking-[0.35em] text-cyan-100">What I build</p>
-            <ul class="mt-4 space-y-3 text-sm leading-6 text-slate-100">
+            <ul class="detail-text mt-4 space-y-3 text-sm leading-6 text-slate-100">
               <li>Products that balance strong UI, clean Angular architecture, and practical backend flow.</li>
               <li>Single-page experiences that keep recruiter scanning fast and focused.</li>
               <li>Admin tooling that keeps content easy to update once the dashboard is connected.</li>
@@ -64,10 +64,10 @@ import { UserProfile } from '../../interfaces/user-profile';
               <div>
                 <p class="text-xs uppercase tracking-[0.35em] text-cyan-300">{{ formatPeriod(experience) }}</p>
                 <h3 class="mt-2 text-xl font-semibold text-white">{{ experience.role }}</h3>
-                <p class="mt-1 text-sm text-slate-300">{{ experience.company }}</p>
+                <p class="detail-text mt-1 text-sm text-slate-300">{{ experience.company }}</p>
               </div>
 
-              <p class="text-sm leading-6 text-slate-200">{{ experience.summary }}</p>
+              <p class="detail-text text-sm leading-6 text-slate-200">{{ experience.summary }}</p>
             </article>
           }
         </div>
