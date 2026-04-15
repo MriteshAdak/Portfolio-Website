@@ -54,8 +54,8 @@ import { PortfolioDataService } from '../../services/portfolio-data.service';
         <app-section
           id="projects"
           eyebrow="Projects"
-          title="Carousel of featured work"
-          description="A scannable project carousel with compact cards so the work stays front and center."
+          title="Personal Projects"
+          description="The projects built so far as a computer science student, with more to come as I continue to learn and grow in my skills."
         >
           <app-carousel [projects]="data.projects" />
         </app-section>
@@ -63,8 +63,8 @@ import { PortfolioDataService } from '../../services/portfolio-data.service';
         <app-section
           id="experiences"
           eyebrow="Experiences"
-          title="Recent experience"
-          description="A concise timeline of the roles and responsibilities that shape the work above."
+          title="Employment Timeline"
+          description="A concise timeline of the roles and responsibilities that shape the skills you see above."
         >
           <div class="space-y-4">
             @for (experience of data.experiences; track experience.id) {
