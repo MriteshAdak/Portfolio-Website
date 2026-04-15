@@ -39,7 +39,7 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 export class SectionComponent {
   readonly id = input.required<string>();
   readonly eyebrow = input('Overview');
-  readonly title = input.required<string>();
+  readonly title = input<String>('');
   readonly description = input('');
   readonly actionLabel = input('');
   readonly actionHref = input('#');
